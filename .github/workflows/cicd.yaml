@@ -28,7 +28,7 @@ jobs:
 
             - name: Docker Build and Push
               run : |
-                docker build -t medicall .
-                docker tag medicall sneakycoder/medicall:latest
+                docker build -t medico .
+                docker tag medico sneakycoder/medico:latest
                 docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_TOKEN }}
-                docker push sneakycoder/medicalnew:latest
+                docker push sneakycoder/medico:latest
